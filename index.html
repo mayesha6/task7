@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayesha - E-commerce product page</title>
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+     <!-- swiper slide  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+</head>
+<body>
+    <!-- header section start -->
+     <header class="header-section">
+        <div class="container mx-auto">
+            <div class="header-wrap flex justify-between items-center py-3">
+                <div class="header-content flex items-center gap-10">
+                    <div class="logo order-2 lg:order-1">
+                        <a href="index.html">
+                            <img src="assets/img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menus order-1 lg:order-2">
+                        <div class="icon-menu" id="icon-menu">
+                            <img src="assets/img/icon-menu.svg" alt="" class="cursor-pointer">
+                        </div>
+                        
+                        <nav class="main-menu w-[250px] lg:w-auto h-lvh lg:h-auto bg-white lg:bg-transparent absolute lg:relative top-0 left-0 p-6 lg:p-0" id="main-menu">
+                            <div class="icon-close mb-12" id="icon-close">
+                                <img src="assets/img/icon-close.svg" alt="" class="cursor-pointer w-[20px]">
+                            </div>
+                            <ul class="">
+                                <li class="block lg:inline-block pe-0 pb-2 lg:pb-0 lg:pe-3"><a href="#" class="block text-[--Grayishblue] hover:text-[--Orange] capitalize duration-300">collection</a></li>
+                                <li class="block lg:inline-block px-0 pb-2 lg:pb-0 lg:px-3"><a href="#" class="block text-[--Grayishblue] hover:text-[--Orange] capitalize duration-300">men</a></li>
+                                <li class="block lg:inline-block px-0 pb-2 lg:pb-0 lg:px-3"><a href="#" class="block text-[--Grayishblue] hover:text-[--Orange] capitalize duration-300">women</a></li>
+                                <li class="block lg:inline-block px-0 pb-2 lg:pb-0 lg:px-3"><a href="#" class="block text-[--Grayishblue] hover:text-[--Orange] capitalize duration-300">about</a></li>
+                                <li class="block lg:inline-block ps-0 pb-2 lg:pb-0 lg:ps-3"><a href="#" class="block text-[--Grayishblue] hover:text-[--Orange] capitalize duration-300">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-cart flex items-center gap-10">
+                    <div class="cart">
+                        <div class="cart-icon-content relative">
+                            <img src="assets/img/icon-cart.svg" alt="" class="cursor-pointer" id="cart-icon">
+                            <p id="cart-icon-product" class="cart-icon-product absolute top-[-9px] right-[-10px] px-2 rounded-lg bg-[--Orange] text-white text-xs font-bold">0</p>
+                        </div>
+                        <div id="cart-content" class="cart-content min-h-64 shadow pb-5 absolute w-3/4 left-[50%] -translate-x-1/2 top-20 rounded-lg h-auto bg-white">
+                            <div class="cart-header">
+                                <h3 class="text-lg text-[--Verydarkblue] border-b-[1px] border-[--Grayishblue] capitalize font-bold p-3 pb-5">cart</h3>
+                            </div>
+                            <div class="cart-body px-3" id="cart-body">
+                                <p class="text-center py-5 font-bold">your cart is empty.</p>
+                                    <!-- <div class="product-details-cart flex item-center justify-between">
+                                        <img src="assets/img/image-product-1-thumbnail.jpg" alt="">
+                                        <div class="product-details-content-cart">
+                                            <div id="product-name"></div>
+                                            <div id="product-price"></div>
+                                        </div>
+                                        <div class="product-del-cart">
+                                            <img src="assets/img/icon-delete.svg" alt="">
+                                        </div>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="assets/img/image-avatar.png" alt="" class="w-[40px] cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </header>
+    <!-- header section end -->
+     
+    <!-- header product start -->
+     <section class="product-section my-10">
+        <div class="container mx-auto">
+            <div class="product-wrap flex lg:flex-row flex-col flex-between items-center gap-5">
+                <div class="product-img w-full lg:w-1/2">
+                    <div class="main-img" id="main-img">
+                        <img src="assets/img/image-product-1.jpg" alt="" class="rounded-xl mb-6">
+                    </div>
+                    <div class="flex gap-3" id="side-img-content">
+                        <div class="side-img relative border-2 border-transparent hover:border-[--Orange] rounded-xl">
+                            <img src="assets/img/image-product-1-thumbnail.jpg" alt="" class="rounded-xl">
+                        </div>
+                        <div class="side-img relative border-2 border-transparent hover:border-[--Orange] rounded-xl">
+                            <img src="assets/img/image-product-2-thumbnail.jpg" alt="" class="rounded-xl">
+                        </div>
+                        <div class="side-img relative border-2 border-transparent hover:border-[--Orange] rounded-xl">
+                            <img src="assets/img/image-product-3-thumbnail.jpg" alt="" class="rounded-xl">
+                        </div>
+                        <div class="side-img relative border-2 border-transparent hover:border-[--Orange] rounded-xl">
+                            <img src="assets/img/image-product-4-thumbnail.jpg" alt="" class="rounded-xl">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-content w-full lg:w-1/2">
+                    <h4 class="text-sm text-[--Darkgrayishblue] uppercase font-bold">sneaker company</h4>
+                    <h1 class="text-[--Verydarkblue] text-5xl capitalize font-bold pt-2 pb-6" id="pro-name">fall limited edition sneakers</h1>
+                    <p class="text-base text-[--Darkgrayishblue] pb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam veniam illo libero fugiat nemo neque qui voluptas, placeat mollitia ut reprehenderit sapiente vero, maxime at hic incidunt veritatis, accusantium illum.</p>
+                    <div class="price flex items-center gap-4">
+                        <h3 id="" class="text-[--Verydarkblue] text-4xl font-bold">$ <span id="offer-price" class="text-4xl">125.00</span> </h3>
+                        <p id="" class="bg-[--Verydarkblue] text-xs text-white py-1 px-3 rounded"><span id="offer-percent" class="text-xs">50</span>%</p>
+                    </div>
+                    <p class="del-price relative text-[--Darkgrayishblue] text-lg font-bold mt-2 mb-4 inline-block">$<span id="del-price" class="text-lg">2500.00</span></p>
+                    <div class="product-cart flex items-center flex-between gap-5  mt-8">
+                        <div class="product-quantity flex items-center gap-8 bg-[--Lightgrayishblue] py-2 px-5 rounded-lg">
+                            <div id="minus" class="cursor-pointer">
+                                <img src="assets/img/icon-minus.svg" alt="">
+                            </div>
+                            <div id="total_quantity">
+                                <p class="text-base font-bold text-[--Darkgrayishblue]" id="pro-quantity">0</p>
+                            </div>
+                            <div id="plus" class="cursor-pointer">
+                                <img src="assets/img/icon-plus.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="add-to-cart-content">
+                            <a href="#" class="flex items-center gap-2 bg-[--Orange] py-2 px-7 rounded-lg text-sm font-bold text-[--Darkgrayishblue] border border-[--Orange] hover:bg-[--Lightgrayishblue] duration-300" id="add-to-cart">
+                                <img src="assets/img/icon-cart.svg" alt="" class="w-[16px]">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- header product end -->
+
+    <!-- header section start -->
+    <!-- header section end -->
+
+    <!-- header section start -->
+    <!-- header section end -->
+     <script src="assets/js/app.js"></script>
+</body>
+</html>

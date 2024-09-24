@@ -1,0 +1,45 @@
+/* global css  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size:16px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+*:focus {
+    outline: none;
+}
+.container{
+    padding: 0px 30px ;
+}
+/* header section  */
+.icon-menu{
+    display: block;
+}
+.main-menu, .icon-close ,.cart-content, .cart-icon-product {
+    display: none;
+}
+.del-price::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--Darkgrayishblue);
+}
+.side-img:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: var(--White);
+}
+#prod-cart{
+    /* display: none; */
+}
+
+
